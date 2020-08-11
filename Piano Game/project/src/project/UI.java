@@ -25,6 +25,8 @@ public class UI extends JFrame{
 			setVisible(true);
 			
 			introBackground = new ImageIcon(Main.class.getResource("../Backeffect/backback.jpg")).getImage();
+			Sound s= new Sound("src/sound/SOUND1.wav",true); // Start Sound
+			s.start();										//Thread setting.
 		}
 		
 		public void paint(Graphics g)
